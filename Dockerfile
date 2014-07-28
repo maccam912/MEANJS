@@ -7,7 +7,6 @@ RUN echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen
 
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install git python build-essential wget screen tmux curl vim mongodb-org -y
-RUN apt-get install mongodb-org=2.6.1 mongodb-org-server=2.6.1 mongodb-org-shell=2.6.1 mongodb-org-mongos=2.6.1 mongodb-org-tools=2.6.1 -y
 RUN sudo service mongod start
 
 RUN mkdir /Development
