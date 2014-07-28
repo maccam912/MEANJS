@@ -1,7 +1,7 @@
 FROM phusion/baseimage
 MAINTAINER Matt Koski <maccam912@gmail.com>
 
-RUN apt-get upgrade && apt-get update -y
+RUN apt-get update && apt-get upgrade -y
 RUN apt-get install git python build-essential wget screen tmux curl vim -y
 
 RUN mkdir /Development
