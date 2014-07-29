@@ -1,4 +1,4 @@
-FROM phusion/baseimage
+FROM ubuntu
 MAINTAINER Matt Koski <maccam912@gmail.com>
 
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
