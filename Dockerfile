@@ -20,8 +20,6 @@ RUN rm -rf /Development/node
 
 RUN npm install -g bower grunt-cli yo generator-meanjs
 
-RUN adduser mean && echo "mean" | passwd mean --stdin && su mean
-
 curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
 
 EXPOSE 80:80
@@ -30,4 +28,4 @@ EXPOSE 3000:3000
 
 
 
-RUN echo "Run 'yo meanjs myApp', cd into 'myApp', and run 'grunt' to start the service."
+RUN echo "1. Create a new user, 'su' into that user.\n2. Start mongo in the background (e.g. 'mongod &')\n3. 'yo meanjs' to scaffold your app in the current directory."
