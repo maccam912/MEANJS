@@ -9,6 +9,9 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install git python build-essential wget screen tmux curl vim mongodb-org -y
 RUN sudo service mongod start
 
+RUN mkdir /data
+RUN mkdir /data/db
+
 RUN mkdir /Development
 RUN cd /Development && git clone git://github.com/joyent/node
 
