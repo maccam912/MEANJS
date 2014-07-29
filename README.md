@@ -2,8 +2,7 @@
 ======
 This dockerfile can be used to build the latest nodejs and npm with the latest npm packages, along with the most current version of mongo and various other tools already in the main repo.
 
-## Note the _JS_ here in MEANJS. This is the project at http://meanjs.org/ so if you are looking for the MEAN_IO_ template you have come to the wrong place.
-======
+## Note the _JS_ here in MEANJS. This is the project at http://meanjs.org/ so if you are looking for the MEAN _IO_ template you have come to the wrong place.
 
 While MEANIO is popular, the developer of the original MEAN stack has started working on MEANJS, and it seems to hold more promise for me.
 
