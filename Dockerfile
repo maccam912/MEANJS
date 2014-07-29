@@ -19,7 +19,7 @@ RUN cd /Development/node && ./configure && make && make install
 RUN rm -rf /Development/node
 RUN chmod 777 -R /Development
 
-RUN npm install -g bower grunt-cli yo generator-meanjs
+RUN npm install -g bower grunt-cli yo generator-meanjs express
 
 curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
 
