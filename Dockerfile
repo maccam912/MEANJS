@@ -19,12 +19,13 @@ RUN npm install -g bower grunt-cli yo generator-meanjs express
 
 RUN mongod &
 
-RUN cd /Development && git clone https://github.com/angular/angular-seed.git
+RUN cd /Development && git clone https://github.com/angular/angular-seed.git && cd angular-seed && npm install && npm start
 
 EXPOSE 80:80
 EXPOSE 443:443
 EXPOSE 3000:3000
 EXPOSE 27017:27017
+EXPOSE 8000:8000
 EXPOSE 9000:9000
 
 
