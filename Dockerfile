@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM debian
 MAINTAINER Matt Koski <maccam912@gmail.com>
 
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
@@ -21,7 +21,7 @@ RUN chmod 777 -R /Development
 
 RUN npm install -g bower grunt-cli yo generator-meanjs express
 
-curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
+# RUN curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
 
 EXPOSE 80:80
 EXPOSE 443:443
