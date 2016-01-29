@@ -7,12 +7,12 @@ RUN echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-or
 RUN apt-get update 
 #RUN apt-get install -y mongodb-org
 RUN apt-get install -y mongodb-org git python build-essential curl
-RUN service mongod start
+RUN start mongod
 
 RUN mkdir -p /data/db
 
 RUN mkdir /Development
-RUN cd /Development && git clone git://github.com/joyent/node
+RUN cd /Development && git clone git://github.com/nodejs/node
 
 RUN cd /Development/node && ./configure && make && make install
 RUN rm -rf /Development/node
